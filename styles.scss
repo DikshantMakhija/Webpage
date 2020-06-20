@@ -1,0 +1,118 @@
+.webpage-advantage-club-task {
+    background: white;
+    .webpage {
+        &-row {
+            display: flex;
+        }
+        &-tile {
+            margin: 20px 1%;
+            background: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: rgba(187, 185, 185, 0.5) 0px 2px 4px 0px;
+            width: 23%;
+            height: fit-content;
+            &-img-container {
+                text-align: center;
+                .webpage-img {
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+            .webpage {
+                &-text {
+                    &-container {
+                        display: flex;
+                    }
+                    &-box {
+                        padding: 10px;
+                        height: 200px;
+                    }
+                    width: 65%;
+                    margin: 5px;
+                    height: 1.3em;
+                    overflow: hidden;
+                    word-break: break-all;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                &-ratings {
+                    margin: 10px;
+                    display: flex;
+                    > img {
+                        width: 10px;
+                        margin-right: 2px;
+                    }
+                    &-container {
+                        font-size: 12px;
+                        margin: 10px;
+                    }
+                }
+                &-locations {
+                    overflow-x: auto;
+                    display: flex;
+                    height: 2em;
+                }
+                &-location {
+                    margin-right: 3px;
+                }
+                &-wishlist-icon {
+                    width: 20px;
+                }
+                &-buynow-button {
+                    text-decoration: none;
+                    outline: none;
+                    padding: 5px;
+                    border: 1px solid rgb(221, 221, 221);
+                    border-radius: 3px;
+                    float: right;
+                    color: rgb(80, 80, 80);
+                    :hover {
+                        opacity: 0.8 !important;
+                        background: #f0f0f0 !important;
+                    }
+                }
+                &-actions {
+                    padding-bottom: 10px;
+                }
+                &-offer-text {
+                    padding: 5px 0;
+                    overflow-y: auto;
+                    > p {
+                        margin-bottom: 2px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        &-dialog {
+            box-shadow: black 0px 8px 6px -6px;
+            position: absolute;
+            left: 40%;
+            top: 30%;
+            transform: none;
+            &-img {
+                &-container {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    pointer-events: auto;
+                    background-color: rgb(255, 255, 255);
+                    background-clip: padding-box;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    border-radius: 0.3rem;
+                    outline: 0px;
+                }
+                padding: 5px;
+                background: rgb(255, 255, 255);
+                border-radius: 5px;
+                width: 300px;
+                height: 250px;
+            }
+            &-info {
+                padding: 5px;
+                text-align: center;
+            }
+        }
+    }
+}
